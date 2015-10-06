@@ -1,14 +1,6 @@
 [
   
     {
-      "title"    : "This is the title",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/this-is-the-title/",
-      "date"     : "25 Sep 2015"
-    } ,
-  
-    {
       "title"    : "Welcome to Jekyll",
       "category" : "jekyll is awesome",
       "tags"     : "jekyll and web",
