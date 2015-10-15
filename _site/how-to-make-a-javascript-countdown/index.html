@@ -130,10 +130,11 @@
 
 <p>After defining what is a date in javascript we only need to get the remaning time to a date, for example, my birthday.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">my_birthday</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">(</span><span class="s2">&quot;11/02/2015 00:00:00 AM&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">my_birthday</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s2">&quot;11/02/2015 00:00:00 AM&quot;</span><span class="p">);</span>
 
 <span class="c1">// lets use .getTime(), to get a numeric value between the dates.</span>
-<span class="kd">var</span> <span class="nx">remaining_time</span> <span class="o">=</span> <span class="nx">my_birthday</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">remaining_time</span> <span class="o">=</span> <span class="nx">my_birthday</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="nx">now</span><span class="p">.</span><span class="nx">getTime</span><span class="p">();</span>
 
 <span class="c1">// so if remaining_time &gt; 60,</span>
 <span class="c1">// that means that is at least 1 minute remaining is right?</span></code></pre></div>
