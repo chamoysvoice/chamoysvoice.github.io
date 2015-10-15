@@ -34,10 +34,11 @@ After defining what is a date in javascript we only need to get the remaning tim
 
 {% highlight javascript%}
 
-var my_birthday = Date("11/02/2015 00:00:00 AM");
+var my_birthday = new Date("11/02/2015 00:00:00 AM");
 
 // lets use .getTime(), to get a numeric value between the dates.
-var remaining_time = my_birthday.getTime() - Date().getTime();
+var now = new Date();
+var remaining_time = my_birthday.getTime() - now.getTime();
 
 // so if remaining_time > 60,
 // that means that is at least 1 minute remaining is right?
